@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            registration form
+        </title>
+    </head>
+    <body>
+        <form action = "registration.html" method = "POST" target = "_self" name = "form">
+        <h1 style="color:rgb(214, 16, 16)">student registration form</h1>
+        <fieldset>
+            <table>
+                <tr><td>regno</td>
+                    <td><input type = "text" placeholder = "enter your regno" autofocus name = "regno" size = "30"</td>
+
+            </tr>
+            <tr>
+                <td>name</td>
+                <td><input type = "text" placeholder = "enter your name" name = "name" size = "30"></td>
+            </tr>
+            <tr>
+                <td>father name</td>
+                <td><input type = "text" placeholder = "enter the father name" name = "father name" size = "30"</td>
+            </tr>
+            <tr>
+                <td>gender</td>
+            <td><input type = "radio" name ="gender"/>male</td>
+            <td><input type = "radio" name = "gender"/>female</td>
+            </tr>
+            <tr>
+                <td>date of birth</td> 
+                <td><input type = "date" placeholder="DD/ MM/ YYYY" size = "30"</td>
+            </tr>
+            <tr> 
+                <td>languages known</td>
+               <td><input type = "checkbox" name = "languages known"/>c
+                <input type = "checkbox" name = "languages known"/>c++
+                <input type = "checkbox" name = "languages known"/>python<br>
+                <input type = "checkbox" name = "languages known"/>java
+                <input type = "checkbox" name = "languages known"/>r
+                <input type = "checkbox" name = "languages known"/>julia
+                </td>
+            </tr>
+            <tr>
+                <td>branch</td>
+                <td>
+                    <select >
+                        <option value = "OPTION">SELECT BRANCH</option>
+                        <option value = "cse">CSE</option>
+                        <option value = "it">IT</option>
+                        <option value = "ai&ds">AI&DS</option>
+                        <option value = "civil">CIVIL</option>
+                        <option value = "mech">MECH</option>
+                        <option value = "EEE">EEE</option>
+                    </select>
+            </td>
+            </tr>
+            <tr>
+                <td>address</td>
+                <td><textarea rows = "5" cols = "30" placeholder="enter">
+
+                </textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+
+                <input type = "submit"  value = submit>
+                </td>
+                <td><input type ="reset" value = reset>
+                    </td>
+            </tr>
+
+        </table>
+     </fieldset>
+    </body>
+</html>
