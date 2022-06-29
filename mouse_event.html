@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>On mousedown event</title>
+        <script>
+            function demo(){
+                document.getElementById("event").innerHTML = "Mouse clicked!!";
+            }
+            function demo1(){
+                var element = document.getElementById("event");
+                element.innerHTML = "Mouse released!!";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="color: hotpink;">Demo for on mouse down event</h1>
+        <b>By using this event,when we click down and release the mouse we can apply the properties</b>
+        <p onmousedown = "demo()" onmouseup = "demo1()" id = "event">Click here for demo</p>
+    </body>
+</html>
