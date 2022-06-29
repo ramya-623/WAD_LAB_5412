@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Conditional stmts
+	</title>
+	<script language = "javascript">
+		function if_else_exec(){
+			var num1  = prompt("Enter value 1 :");
+			var num2  = prompt("Enter value 2 :");
+		    var num3  = prompt("Enter value 3 :");
+			document.write("Greatest Value in entered values is ")
+			if(num1 > num2){
+				if(num1 > num3){
+					document.write(num1);
+				}
+				else{
+					document.write(num3);
+				}
+			}
+			else{
+				if(num2 > num3){
+					document.write(num2);
+				}
+				else{
+					document.write(num3);
+				}
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<input type="button" onclick="if_else_exec()" value = "Click to enter values">
+</body>
+</html>
