@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arithmetic Operations</title>
+	<script type="text/javascript">
+		function arth(operator){
+			var op1 = document.getElementById('op1').value;
+			var op2 = document.getElementById('op2').value;	
+
+			text = op1 + operator + op2 + " = "
+			
+			switch(operator){
+				case '+':
+					document.getElementById("output").innerHTML = text + (Number(op1)+Number(op2));
+					break;
+				case '-':
+					document.getElementById("output").innerHTML = text + (Number(op1)-Number(op2));
+					break;
+				case '*':
+					document.getElementById("output").innerHTML = text + (Number(op1)*Number(op2));
+					break;
+				case '/':
+					document.getElementById("output").innerHTML = text + (Number(op1)/Number(op2));
+					break;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<h1 style="color:royalblue; text-align: center;">ARITHMATIC OPERATIONS</h1>
+	
+		
+		<table align="center" cellpadding="10px" >
+			<tr>
+				<th>
+					<h2>Operand1 =</h2>
+				</th>
+				<th>
+					<input id = "op1" placeholder = "Enter Operand1" name="oper1">
+				</th>
+			</tr>
+			<tr>
+				<th>
+				<h2>Operand2 =</h2>
+				</th>
+				<th>
+					<input id = "op2" placeholder = "Enter Operand2" name="oper2">
+				</th>
+			</tr>
+		</table>
+		<table align = "center"  >
+			<tr>
+				<th><input type="button" onclick = "arth('+')" value="+"></th>
+				<th><input type="button" value="-" onclick = "arth('-')"></th>
+				<th><input type="button" value="*" onclick = "arth('*')"></th>
+				<th><input type="button" value="/" onclick = "arth('/')"></th>
+			</tr>
+		</table>
+		<h2 align="center" id ="output"><h2>
+	</fieldset>
+</body>
+</html>
