@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Switch stmts</title>
+	<center>
+	<script language="javascript">
+		function switch_stmts(){
+		var grade = prompt("Enter your Grade :");
+		if(grade != "" && grade != null){
+			switch(grade){
+				case 'O':
+					document.write("<h1>Outstanding</h1>");
+					break;
+				case "A":
+					document.write("<h1>Excellent</h1>");
+					break;
+				case "B":
+					document.write("<h1>Very Good</h1>");
+					break;
+				case "C":
+					document.write("<h1>Good</h1>");
+					break;
+				case "D":
+					document.write("<h1>Above Average</h1>");
+					break;
+				case "E":
+					document.write("<h>Average</h1>");
+					break;
+				case "F":
+					document.write("<h1>Fail</h1>");
+					break;
+			}
+		}
+	}
+	</script>
+	</center>
+</head>
+<body>
+	<input type="button" onclick="switch_stmts()" value = "Click to enter your grade">
+
+</body>
+</html>
